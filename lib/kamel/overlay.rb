@@ -1,8 +1,9 @@
 begin
   require 'kml'
 rescue LoadError
-  $STDERR.puts "You must have ruby_kml either installed to use Kamel - either as a gem or available in your path"
-  $STDERR.puts "gem install ruby_kml --source http://gems.github.com"
+  puts "You must have ruby_kml either installed to use Kamel - either as a gem or available in your path"
+  puts "gem install xaviershay-ruby_kml --source http://gems.github.com"
+  exit
 end
 
 module Kamel  
