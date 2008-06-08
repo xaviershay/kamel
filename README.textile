@@ -1,0 +1,29 @@
+h1. Kamel
+
+Create KML files for tasty overlays on google earth and google maps
+
+<pre><code>gem install kamel --source http://gems.github.com/</code></pre>
+
+h2. Usage
+
+<pre><code>require 'rubygems'
+require 'kamel'
+
+overlay = Kamel::Overlay.new
+overlay.name = 'Melbourne Train Stations'
+[
+  ["Flinders St",    -37.818078, 144.966811],
+  ["Southern Cross", -37.818358, 144.952417],
+].each do |name, lat, lng|
+  overlay.placemark!(
+    :name        => name,
+    :description => "This is a train station",
+    :location    => {:lng => lng, :lat => lat},
+    :icon        => "http://www.uksa.org/images/about/train-icon.gif"
+  )
+end
+puts overlay.to_kml</code></pre>
+
+h2. Author
+
+Xavier Shay ("http://rhnh.net":http://rhnh.net)
