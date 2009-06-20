@@ -9,7 +9,7 @@ require 'rexml/document'
 require 'rexml/element'
 
 describe Kamel::Overlay, '#to_kml' do
-  setup do
+  before(:each) do
     @overlay = Kamel::Overlay.new('test')
     @overlay.placemark!(:name => 'placemark-1', :location => {:lat => 1, :lng => 2}, :description => 'Place 1', :icon => 'icon-1.png')
     @overlay.placemark!(:name => 'placemark-2', :location => "3,4", :description => 'Place 2', :icon => 'icon-1.png')
