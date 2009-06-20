@@ -4,6 +4,8 @@ h1. Kamel
 
 Create KML files for tasty overlays on google earth and google maps. Provides a cleaner interface than ruby_kml (which it uses internally).
 
+Tested on ruby 1.8.6-339, 1.8.7-160 and 1.9.1-rc2
+
 h2. Usage
 
 <pre><code>require 'rubygems'
