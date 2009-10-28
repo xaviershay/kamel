@@ -2,7 +2,7 @@ begin
   require 'kml'
 rescue LoadError
   puts "You must have ruby_kml either installed to use Kamel - either as a gem or available in your path"
-  puts "gem install xaviershay-ruby_kml --source http://gems.github.com"
+  puts "gem install schleyfox-ruby_kml --source http://gems.github.com"
   exit
 end
 

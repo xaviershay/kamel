@@ -1,6 +1,6 @@
 h1. Kamel
 
-<pre><code>gem install kamel --source http://gems.github.com/</code></pre>
+<pre><code>gem install kamel --source http://gemcutter.org/</code></pre>
 
 Create KML files for tasty overlays on google earth and google maps. Provides a cleaner interface than ruby_kml (which it uses internally).
 
