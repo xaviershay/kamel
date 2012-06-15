@@ -1,6 +1,6 @@
 require 'kml'
 
-module Kamel  
+module Kamel
   class Overlay
     attr_accessor :prefix
     attr_accessor :name
@@ -24,7 +24,7 @@ module Kamel
           :icon_style => KML::IconStyle.new(
             :icon => KML::Icon.new(:href => icon)
           )
-        )  
+        )
       }
       self.placemarks.each do |placemark|
         attrs = {}
@@ -34,7 +34,7 @@ module Kamel
         attrs[:style_url] = '#' + [prefix, 'style', self.icons.index(placemark[:icon])].join('-') unless placemark[:icon].nil?
         doc.features << KML::Placemark.new(attrs)
       end
-      
+
       kml = KMLFile.new
       kml.objects << doc
       kml.render
@@ -43,7 +43,7 @@ module Kamel
     protected
 
     def icons
-      self.placemarks.collect {|x| x[:icon]}.compact.uniq.sort 
+      self.placemarks.collect {|x| x[:icon]}.compact.uniq.sort
     end
   end
 end
