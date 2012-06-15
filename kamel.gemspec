@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 0.9'
 
   gem.add_runtime_dependency 'ruby_kml', '~> 0.1.4'
-  gem.add_runtime_dependency 'builder', '~> 3.0.0' #ruby_kml depends von build but does not declare it's dependencies correctly
+  gem.add_runtime_dependency 'builder', '~> 3.0.0' #ruby_kml depends on builder but does not declare it's dependencies correctly
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
