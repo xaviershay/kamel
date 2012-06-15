@@ -1,12 +1,5 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
-require 'rubygems'
-require 'spec'
-require 'kamel'
-require File.dirname(__FILE__) + '/../xpath_matchers'
-
-
-require 'rexml/document'
-require 'rexml/element'
+# encoding: utf-8
+require 'spec_helper'
 
 describe Kamel::Overlay, '#to_kml' do
   before(:each) do

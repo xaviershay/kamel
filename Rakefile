@@ -1,11 +1,7 @@
+#!/usr/bin/env rake
+require "bundler/gem_tasks"
+require 'rspec/core/rake_task'
 
-require 'spec/rake/spectask'
+RSpec::Core::RakeTask.new(:spec)
 
-Spec::Rake::SpecTask.new do |t|
-  t.warning = false
-  t.rcov = false
-  t.spec_files = FileList['spec/**/*_spec.rb']
-end
-
-task :test    => :spec
-task :default => :spec
+task default: :spec
