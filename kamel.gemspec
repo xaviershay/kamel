@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["contact@rhnh.net"]
   gem.description   = %q{Create KML files for tasty overlays on google earth and google maps}
   gem.summary       = %q{Create KML files for tasty overlays on google earth and google maps}
-  gem.homepage      = "http://github.com/xaviershay/lesstile"
+  gem.homepage      = "https://github.com/xaviershay/kamel"
 
   gem.required_ruby_version     = ">= 1.8.7"
   gem.rubyforge_project         = "kamel"
