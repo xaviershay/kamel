@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Create KML files for tasty overlays on google earth and google maps}
   gem.homepage      = "http://github.com/xaviershay/lesstile"
 
-  gem.required_ruby_version     = ">= 1.9.2"
+  gem.required_ruby_version     = ">= 1.8.7"
   gem.rubyforge_project         = "kamel"
 
   gem.add_development_dependency "rspec", "~> 2.9"
