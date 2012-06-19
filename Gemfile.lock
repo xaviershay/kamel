@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kamel (0.1.1)
+    kamel (0.2.0)
       builder (~> 3.0.0)
       ruby_kml (~> 0.1.4)
 
