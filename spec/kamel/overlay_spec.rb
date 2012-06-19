@@ -1,12 +1,5 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
-require 'rubygems'
-require 'spec'
-require 'kamel'
-require File.dirname(__FILE__) + '/../xpath_matchers'
-
-
-require 'rexml/document'
-require 'rexml/element'
+# encoding: utf-8
+require 'spec_helper'
 
 describe Kamel::Overlay, '#to_kml' do
   before(:each) do
@@ -30,7 +23,7 @@ describe Kamel::Overlay, '#to_kml' do
     @doc.should match_xpath("/kml/Document/Placemark[2]/name", "placemark-2")
     @doc.should match_xpath("/kml/Document/Placemark[3]/name", "placemark-3")
   end
-  
+
   it 'records the description of each placemark if it is provided' do
     #TODO Figure out how to check for CDATA
     @doc.should have_xpath("/kml/Document/Placemark[1]/description")
