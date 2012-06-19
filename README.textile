@@ -1,10 +1,11 @@
 h1. Kamel
 
-<pre><code>gem install kamel --source http://gemcutter.org/</code></pre>
+<pre><code>gem install kamel</code></pre>
 
-Create KML files for tasty overlays on google earth and google maps. Provides a cleaner interface than ruby_kml (which it uses internally).
+Create KML files for tasty overlays on google earth and google maps. Provides a
+cleaner interface than ruby_kml (which it uses internally).
 
-Tested on ruby 1.8.6-339, 1.8.7-160 and 1.9.1-rc2
+Tested on ruby 1.8.7 and 1.9.3.
 
 h2. Usage
 
@@ -25,7 +26,3 @@ overlay.name = 'Melbourne Train Stations'
   )
 end
 puts overlay.to_kml</code></pre>
-
-h2. Author
-
-Xavier Shay ("http://rhnh.net":http://rhnh.net)
